@@ -19,9 +19,7 @@ This lab complements my [JML Identity Lifecycle Automation](https://github.com/K
 
 ---
 
-## What Was Built
-
-### Module 2 — OIDC / OAuth 2.0 Integration
+## Module 2 — OIDC / OAuth 2.0 Integration
 
 - Created GatesCyberConsulting-OIDC-App as a Single Page Application
 - Configured allowed callback, logout, and web origin URIs
@@ -29,7 +27,27 @@ This lab complements my [JML Identity Lifecycle Automation](https://github.com/K
 - Created two users: engineering.user and itadmin.user
 - Triggered full Authorization Code flow — auth code returned in callback URL
 
-### Module 3 — Adaptive MFA + Policies
+![App Created](screenshots/module2/module2-oidc-app-created.png)
+
+![App URIs](screenshots/module2/module2-oidc-app-uris.png)
+
+![OIDC Endpoints](screenshots/module2/module2-oidc-endpoints.png)
+
+![Login Page](screenshots/module2/module2-oidc-login-page.png)
+
+![Auth Code Callback](screenshots/module2/module2-oidc-auth-code-callback.png)
+
+![Engineering User](screenshots/module2/module2-user-engineering.png)
+
+![IT Admin User](screenshots/module2/module2-user-itadmin.png)
+
+![Database Connection](screenshots/module2/module2-database-connection.png)
+
+![Social Connections](screenshots/module2/module2-social-connections.png)
+
+---
+
+## Module 3 — Adaptive MFA + Policies
 
 - Enabled One-time Password (TOTP) authenticator
 - Set MFA policy to Always — all users required to enroll and verify
@@ -37,6 +55,28 @@ This lab complements my [JML Identity Lifecycle Automation](https://github.com/K
 - Created Engineering and IT-Admin roles with users assigned
 - Completed end-to-end login: password auth → MFA enrollment → OTP verify → auth code issued
 - Reviewed authentication logs confirming: Success Login, OTP Auth Succeed, MFA Enrollment
+
+![OTP Enabled](screenshots/module3/module3-mfa-otp-enabled.png)
+
+![MFA Policy Always](screenshots/module3/module3-mfa-policy-always.png)
+
+![Adaptive Risk Enabled](screenshots/module3/module3-mfa-adaptive-risk-enabled.png)
+
+![Engineering Role](screenshots/module3/module3-role-engineering.png)
+
+![Engineering User Assigned](screenshots/module3/module3-role-engineering-user-assigned.png)
+
+![IT Admin Role](screenshots/module3/module3-role-itadmin.png)
+
+![IT Admin User Assigned](screenshots/module3/module3-role-itadmin-user-assigned.png)
+
+![MFA OTP Prompt](screenshots/module3/module3-mfa-otp-prompt.png)
+
+![Auth Logs](screenshots/module3/module3-auth-logs.png)
+
+![Success Login Detail](screenshots/module3/module3-success-login-detail.png)
+
+![Raw JSON Log](screenshots/module3/module3-success-login-raw-json.png)
 
 ---
 
